@@ -52,4 +52,10 @@ public class Cat
             return "Playing";
         }
     }
+/*    //сумма съеденой еды текущей кошки
+    public Double getAmount() {
+        return weight - originWeight;
+
+    }
+*/
 }
