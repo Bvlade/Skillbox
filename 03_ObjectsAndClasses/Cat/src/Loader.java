@@ -8,6 +8,7 @@ public class Loader
         Cat bantik = new Cat();
         Cat chernysh = new Cat();
         Cat boris = new Cat();
+        Cat fantik = new Cat();
 
         //хорошо, что это не коты, а всего лишь объекты :)
 
@@ -81,5 +82,11 @@ public class Loader
         System.out.println("Weight Boris after feed is: " + boris.getWeight() + " gr" +
                 ". Status is: " + chernysh.getStatus());
         boris.meow();
+
+        fantik.feed(150.0); // Фантика покормили кормом весом в 150 гр.
+        fantik.feed(100.0); //Фантика покормили кормом весом в 100 гр.
+        fantik.pee(); // Фантик сходил в туалет
+        fantik.pee(); // Фантик сходил в туалет
+        System.out.println("Общий вес съеденного корма Фантиком: " + fantik.getAmount() + "гр.");
     }
 }

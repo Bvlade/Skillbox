@@ -2,6 +2,7 @@
 public class Cat {
     private double originWeight;
     private double weight;
+    private double weightAmount;
 
     private double minWeight;
     private double maxWeight;
@@ -11,7 +12,7 @@ public class Cat {
         originWeight = weight;
         minWeight = 1000.0;
         maxWeight = 9000.0;
-
+        weightAmount = 0.0; //переменная хранит количество граммов потреблённого корма
     }
 
     public void meow() {
@@ -21,6 +22,7 @@ public class Cat {
 
     public void feed(Double amount) {
         weight = weight + amount;
+        weightAmount = weightAmount + amount;
     }
 
     public void drink(Double amount) {
@@ -45,7 +47,7 @@ public class Cat {
 
     //сумма съеденой еды текущей кошки
     public Double getAmount() {
-        return weight - originWeight;
+        return weightAmount;
     }
 
     //метод "Сходить в туалет"
