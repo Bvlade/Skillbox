@@ -11,6 +11,8 @@ public class Loader
         Cat fantik = new Cat();
 
         //хорошо, что это не коты, а всего лишь объекты :)
+        //тест
+
 
         //первый "подопытный кролик" - кот Бантик )))
         System.out.println("For Bantik:");
