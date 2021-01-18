@@ -1,8 +1,6 @@
 
-public class Loader
-{
-     public static void main(String[] args)
-    {
+public class Loader {
+    public static void main(String[] args) {
         Cat murka = new Cat();
         Cat vasya = new Cat();
         Cat bantik = new Cat();
@@ -10,14 +8,15 @@ public class Loader
         Cat boris = new Cat();
         Cat fantik = new Cat();
 
+
+
         //хорошо, что это не коты, а всего лишь объекты :)
         //тест
 
-
         //первый "подопытный кролик" - кот Бантик )))
         System.out.println("For Bantik:");
-        System.out.println("Weight Bantik before first 'meow' is: " + bantik.getWeight() + " gr" +
-                ". Status is: " + bantik.getStatus());
+        System.out.println("Weight Bantik before first 'meow' is: " + bantik.getWeight() + " gr. " +
+                 "Status is: " + bantik.getStatus());
         //заставляем Бантика мяукать до "смерти"
         int countBantik = 1;
         String statusBantik = "Playing";
@@ -32,7 +31,7 @@ public class Loader
 
         //а вот судьба Мурки...
         System.out.println("For Murka:");
-        System.out.println("Weight Murka before feed is: " + murka.getWeight() + " gr. Status is: " + murka.getStatus());
+        System.out.println("Weight Murka before feed is: " + murka.getWeight() + " gr. " + "Status is: " + murka.getStatus());
         // закармливаем её пока не "лопнет")
         int countMurka = 1;
         String statusMurkaPlaying = "Playing";
@@ -46,10 +45,11 @@ public class Loader
         System.out.println(". Weight after feed: " + murka.getWeight() + " gr.");
         System.out.println();
 
+
         //что будет делать Васька, когда выпьет и, какой у него станет вес...
         System.out.println("For Vasya:");
-        System.out.println("Weight Vasya is: " + vasya.getWeight() + " gr" +
-                ". Status is: " + vasya.getStatus());
+        System.out.println("Weight Vasya is: " + vasya.getWeight() + " gr. " +
+                 "Status is: " + vasya.getStatus());
         System.out.println("Drink... after drink...");
         vasya.drink(1.0);
         System.out.print("Vasya is " + vasya.getStatus());
@@ -61,8 +61,8 @@ public class Loader
 
         //для кота Черныша
         System.out.println("For Chernysh:");
-        System.out.println("Weight Chernysh is: " + chernysh.getWeight() + " gr" +
-                ". Status is: " + chernysh.getStatus());
+        System.out.println("Weight Chernysh is: " + chernysh.getWeight() + " gr. " +
+                  "Status is: " + chernysh.getStatus());
         chernysh.meow();
         System.out.println("Weight Chernysh after meow is: " + chernysh.getWeight() + " gr" +
                 ". Status is: " + chernysh.getStatus());
@@ -85,10 +85,13 @@ public class Loader
                 ". Status is: " + chernysh.getStatus());
         boris.meow();
 
+
         fantik.feed(150.0); // Фантика покормили кормом весом в 150 гр.
         fantik.feed(100.0); //Фантика покормили кормом весом в 100 гр.
         fantik.pee(); // Фантик сходил в туалет
         fantik.pee(); // Фантик сходил в туалет
         System.out.println("Общий вес съеденного корма Фантиком: " + fantik.getAmount() + "гр.");
+
+        System.out.println("Количество оставшихся кошек " + Cat.count);
     }
 }
