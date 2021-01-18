@@ -1,5 +1,12 @@
 
 public class Cat {
+
+    //константы
+    public static final int EYES_COUNT = 2;
+    public static final double MAXWEIGHT = 9000.0;
+    public static final double MINWEIGHT = 1000.0;
+
+    //переменные
     public static int count = 0;
     public static int n = 0; //вспомогательная переменная
     public static int i = 0; //вспомогательная переменная
