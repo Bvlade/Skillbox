@@ -9,7 +9,6 @@ public class Loader {
         Cat fantik = new Cat();
 
 
-
         //хорошо, что это не коты, а всего лишь объекты :)
         //тест
 
@@ -93,5 +92,23 @@ public class Loader {
         System.out.println("Общий вес съеденного корма Фантиком: " + fantik.getAmount() + "гр.");
 
         System.out.println("Количество оставшихся кошек " + Cat.count);
+
+
+
+        //код для Урока 5
+        Cat filka = new Cat(1100.00);
+        System.out.println("Вес Фильки: " + filka.getKitten() + " гр."); //метод генерации котёнка
+
+        Cat Snezhok = new Cat(1200.00);
+        System.out.println("Вес Снежка: " + Snezhok.getKitten() + " гр."); //метод генерации котёнка
+
+        Cat Sharik = new Cat(1500.00);
+        System.out.println("Вес Шарика: " + Sharik.getKitten() + " гр."); //метод генерации котёнка
+
+
+
+
     }
+
+
 }

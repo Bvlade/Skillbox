@@ -18,6 +18,16 @@ public class Cat {
         getCount();
     }
 
+    //код для Урока 5
+    public Cat(double weight)   {
+        this.weight = weight;
+    }
+
+    public double getKitten()   {
+        return weight;
+    }
+    //окончание кода для Урока 5
+
 
     public static int getCount() {
         count = count + 1;  // счётчик кошек
@@ -94,4 +104,5 @@ public class Cat {
             System.out.println("The cat is Dead");
         }
     }
+
 }
