@@ -16,6 +16,8 @@ public class Cat {
         originWeight = weight;
         weightAmount = 0.0; //переменная хранит количество граммов потреблённого корма
         getCount();
+// test
+
     }
 
     //код для Урока 5
