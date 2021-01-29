@@ -1,5 +1,11 @@
 
 public class Loader {
+
+    //метод для урока 5
+    private static Cat getKitten() {
+        return new Cat(1100.00);
+    }
+
     public static void main(String[] args) {
         Cat murka = new Cat();
         Cat vasya = new Cat();
@@ -7,7 +13,6 @@ public class Loader {
         Cat chernysh = new Cat();
         Cat boris = new Cat();
         Cat fantik = new Cat();
-
 
         //хорошо, что это не коты, а всего лишь объекты :)
         //тест
@@ -96,19 +101,13 @@ public class Loader {
 
 
         //код для Урока 5
-        Cat filka = new Cat(1100.00);
-        System.out.println("Вес Фильки: " + filka.getKitten() + " гр."); //метод генерации котёнка
+        Cat filka = getKitten();
+        System.out.println("Вес котёнка Филька " + filka.weight + " гр.");
 
-        Cat Snezhok = new Cat(1200.00);
-        System.out.println("Вес Снежка: " + Snezhok.getKitten() + " гр."); //метод генерации котёнка
+        Cat snezhok = getKitten();
+        System.out.println("Вес котёнка Снежка: " + snezhok.weight + " гр.");
 
-        Cat Sharik = new Cat(1500.00);
-        System.out.println("Вес Шарика: " + Sharik.getKitten() + " гр."); //метод генерации котёнка
-
-
-
-
+        Cat sharik = getKitten();
+        System.out.println("Вес котёнка Шарика: " + sharik.weight + " гр.");
     }
-
-
 }

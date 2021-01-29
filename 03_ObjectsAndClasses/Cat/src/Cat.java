@@ -7,8 +7,8 @@ public class Cat {
     public static int count = 0;
     public static int n = 0; //вспомогательная переменная
     public static int i = 0; //вспомогательная переменная
+    public double weight;
     private double originWeight;
-    private double weight;
     private double weightAmount;
 
     public Cat() {
@@ -16,24 +16,18 @@ public class Cat {
         originWeight = weight;
         weightAmount = 0.0; //переменная хранит количество граммов потреблённого корма
         getCount();
-// test
-
     }
 
-    //код для Урока 5
-    public Cat(double weight)   {
+    //код для Урока 5 - конструктор для создания кошки с переданным в конструктор весом
+    public Cat(double weight) {
         this.weight = weight;
-    }
-
-    public double getKitten()   {
-        return weight;
     }
     //окончание кода для Урока 5
 
 
     public static int getCount() {
         count = count + 1;  // счётчик кошек
-        System.out.println("count" + count);
+//        System.out.println("count" + count);
         return count;
     }
 
